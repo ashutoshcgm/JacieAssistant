@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    For Data Binding-->
+    <data>
+        <variable
+            name="assistantViewModel"
+            type="com.example.jacie.assistant.AssistantViewModel">
+        </variable>
+    </data>
+    <LinearLayout
+        android:id="@+id/assistantLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bcg_5"
+        tools:context=".MainActivity">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/mic"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/assistantMic"/>
+
+    </LinearLayout>
+
+</layout>

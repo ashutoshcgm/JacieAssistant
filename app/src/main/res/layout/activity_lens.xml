@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.GoogleLensActivity"
+    android:background="@drawable/bcg_18">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/searchBtn">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:gravity="center"
+                android:text="IMAGE PREVIEW"
+                android:textColor="#99D1EF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageViewPre"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/black"
+                android:maxHeight="400dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="TEXT PREVIEW"
+                android:textColor="#99D1EF"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/resultEd"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="@color/chips"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:hint="Text will Appear Here"
+                android:gravity="center"
+                android:background="@drawable/edt_background"
+                android:layout_marginHorizontal="5dp"
+                android:textColorHint="@android:color/tertiary_text_light"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/search"
+        android:textColor="#99D1EF"
+        android:textSize="18sp"
+        android:background="@drawable/btn_bcg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Google" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_new</item>
+        <item name="colorPrimaryVariant">@color/color_new</item>
+        <item name="colorOnPrimary">@color/color_new</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_new</item>
+        <item name="colorSecondaryVariant">@color/color_new</item>
+        <item name="colorOnSecondary">@color/color_new</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="chips">
+
+        <item name="android:textSize">
+            15sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:letterSpacing">
+            0.02
+        </item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">
+            @font/adamina
+        </item>
+        <item name="backgroundTint">
+            @color/colorPrimary
+        </item>
+
+
+    </style>
+</resources>
